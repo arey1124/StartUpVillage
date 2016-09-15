@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sv.carkharido.carkharido.Home"
+    tools:showIn="@layout/activity_search_used_cars"
+    android:background="@drawable/bg4">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tablayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cd1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/city"
+                        android:background="#98605e5e"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:textStyle="bold"
+                        android:background="#fff"
+                        android:text="Mumbai"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cd2"
+                android:layout_below="@+id/cd1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/city"
+                        android:background="#98605e5e"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:textStyle="bold"
+                        android:background="#fff"
+                        android:text="Delhi"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cd3"
+                android:layout_below="@+id/cd2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/city"
+                        android:background="#98605e5e"
+                        android:padding="10dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:textStyle="bold"
+                        android:background="#fff"
+                        android:text="Jaipur"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/tablayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tab_height">
+
+        <RelativeLayout
+            android:id="@+id/home"
+            android:paddingTop="@dimen/footerpadding"
+            android:layout_width="@dimen/footerwidth"
+            android:layout_height="wrap_content"
+            android:background="#2cc3f9">
+            <ImageView
+                android:id="@+id/dash_homeimg"
+                android:layout_width="@dimen/footerimgwidth"
+                android:layout_height="@dimen/footerimgheight"
+                android:src="@drawable/home"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/dash_homeimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Home"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/newimg"
+            android:paddingTop="@dimen/footerpadding"
+            android:background="#2cc3f9"
+            android:layout_width="@dimen/footerwidth"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dash_cartimg"
+                android:layout_width="@dimen/footerimgwidth"
+                android:layout_height="@dimen/footerimgheight"
+                android:src="@drawable/newimg"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/dash_cartimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="New"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/used"
+            android:paddingTop="@dimen/footerpadding"
+            android:background="#ffffff"
+            android:layout_width="@dimen/footerwidth"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dash_scanimg"
+                android:layout_width="@dimen/footerimgwidth"
+                android:layout_height="@dimen/footerimgheight"
+                android:src="@drawable/used"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/dash_scanimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Used"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/sell"
+            android:paddingTop="@dimen/footerpadding"
+            android:background="#2cc3f9"
+            android:layout_width="@dimen/footerwidth"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dash_searchimg"
+                android:layout_width="@dimen/footerimgwidth"
+                android:layout_height="@dimen/footerimgheight"
+                android:src="@drawable/sell"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/dash_searchimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Sell"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

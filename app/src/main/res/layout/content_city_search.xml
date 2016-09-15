@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_city_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sv.carkharido.carkharido.CitySearch"
+    tools:showIn="@layout/activity_city_search"
+    android:background="#2b7ac1">
+
+    <EditText
+        android:id="@+id/searchcar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/dashboardimg_shade"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/search2"
+        android:paddingLeft="10dp"
+        android:layout_margin="16dp"
+        android:hint="Search"
+        android:maxLines="1"
+        android:textColorHint="#5e5e5e"/>
+
+    <GridView
+        android:id="@+id/grid1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/searchcar"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/tablayout"
+        ></GridView>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/tablayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tab_height">
+
+        <RelativeLayout
+            android:id="@+id/home"
+            android:paddingTop="@dimen/footerpadding"
+            android:layout_width="@dimen/footerwidth"
+            android:layout_height="wrap_content"
+            android:background="#2cc3f9">
+            <ImageView
+                android:id="@+id/dash_homeimg"
+                android:layout_width="@dimen/footerimgwidth"
+                android:layout_height="@dimen/footerimgheight"
+                android:src="@drawable/home"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/dash_homeimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Home"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/newimg"
+            android:paddingTop="@dimen/footerpadding"
+            android:background="#2cc3f9"
+            android:layout_width="@dimen/footerwidth"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dash_cartimg"
+                android:layout_width="@dimen/footerimgwidth"
+                android:layout_height="@dimen/footerimgheight"
+                android:src="@drawable/newimg"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/dash_cartimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="New"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/used"
+            android:paddingTop="@dimen/footerpadding"
+            android:background="#ffffff"
+            android:layout_width="@dimen/footerwidth"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dash_scanimg"
+                android:layout_width="@dimen/footerimgwidth"
+                android:layout_height="@dimen/footerimgheight"
+                android:src="@drawable/used"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/dash_scanimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Used"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/sell"
+            android:paddingTop="@dimen/footerpadding"
+            android:background="#2cc3f9"
+            android:layout_width="@dimen/footerwidth"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dash_searchimg"
+                android:layout_width="@dimen/footerimgwidth"
+                android:layout_height="@dimen/footerimgheight"
+                android:src="@drawable/sell"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/dash_searchimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Sell"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

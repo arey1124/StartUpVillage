@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_car_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sv.carkharido.carkharido.CarProfile"
+    tools:showIn="@layout/activity_new_car_profile"
+    android:background="#2b7ac1">
+
+
+    <ImageView
+        android:id="@+id/car_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/beetle"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/carname_details"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/car_name_layout"
+        android:id="@+id/carname_details"
+        android:layout_above="@+id/car_Details"
+        android:background="#ffffff"
+        android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/car_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#3498db"
+            android:text="Name "
+            android:textSize="20dp"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/car_Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buybtn">
+
+        <LinearLayout
+            android:id="@+id/caridfield"
+            android:layout_width="@dimen/car_prof_id"
+            android:layout_height="@dimen/car_prof_id_height"
+            android:background="#ffffff"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3498db"
+                android:text="CAR ID "
+                android:gravity="center"
+                android:paddingTop="20dp"
+                />
+            <TextView
+                android:id="@+id/car_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:paddingTop="10dp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/carpricefield"
+            android:layout_width="@dimen/car_prof_id"
+            android:layout_height="@dimen/car_prof_price_height"
+            android:layout_toRightOf="@+id/caridfield"
+            android:background="#ffffff"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3498db"
+                android:text="PRICE"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                />
+            <TextView
+                android:id="@+id/car_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="price"
+                android:paddingTop="10dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/car_prof_id"
+            android:layout_height="@dimen/car_prof_city_height"
+            android:layout_toRightOf="@+id/carpricefield"
+            android:background="#ffffff"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3498db"
+                android:text="AVAILABILITY"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                />
+            <TextView
+                android:id="@+id/car_availability"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="available"
+                android:paddingTop="10dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/buybtn"
+        android:layout_above="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buybtn_layout"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="BUY NOW"
+            android:textColor="#ffffff"
+            android:background="#ec6666"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/tablayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tab_height">
+
+        <RelativeLayout
+            android:id="@+id/home"
+            android:paddingTop="@dimen/footerpadding"
+            android:layout_width="@dimen/footerwidth"
+            android:layout_height="wrap_content"
+            android:background="#2cc3f9">
+            <ImageView
+                android:id="@+id/dash_homeimg"
+                android:layout_width="@dimen/footerimgwidth"
+                android:layout_height="@dimen/footerimgheight"
+                android:src="@drawable/home"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/dash_homeimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Home"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/newimg"
+            android:paddingTop="@dimen/footerpadding"
+            android:background="#2cc3f9"
+            android:layout_width="@dimen/footerwidth"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dash_cartimg"
+                android:layout_width="@dimen/footerimgwidth"
+                android:layout_height="@dimen/footerimgheight"
+                android:src="@drawable/newimg"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/dash_cartimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="New"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/used"
+            android:paddingTop="@dimen/footerpadding"
+            android:background="#ffffff"
+            android:layout_width="@dimen/footerwidth"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dash_scanimg"
+                android:layout_width="@dimen/footerimgwidth"
+                android:layout_height="@dimen/footerimgheight"
+                android:src="@drawable/used"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/dash_scanimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Used"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/sell"
+            android:paddingTop="@dimen/footerpadding"
+            android:background="#2cc3f9"
+            android:layout_width="@dimen/footerwidth"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/dash_searchimg"
+                android:layout_width="@dimen/footerimgwidth"
+                android:layout_height="@dimen/footerimgheight"
+                android:src="@drawable/sell"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_below="@id/dash_searchimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Sell"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

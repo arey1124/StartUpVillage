@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="tab_height">60dp</dimen>
+    <dimen name="category_height">90dp</dimen>
+    <dimen name="catimgsize">50dp</dimen>
+    <dimen name="catimg_marginstartright">125dp</dimen>
+    <dimen name="catimg_marginstartleft">65dp</dimen>
+    <dimen name="footerimgheight">40dp</dimen>
+    <dimen name="footerimgwidth">40dp</dimen>
+
+    <dimen name="footerwidth">90dp</dimen>
+    <dimen name="footerpadding">3dp</dimen>
+    <dimen name="container_padding">12dp</dimen>
+    <dimen name="container_marginLeft">18dp</dimen>
+    <dimen name="container_marginRight">10dp</dimen>
+    
+    
+    <dimen name="car_prof_id">120dp</dimen>
+    <dimen name="car_prof_price">120dp</dimen>
+    <dimen name="car_prof_city">110dp</dimen>
+
+    <dimen name="car_prof_id_height">80dp</dimen>
+    <dimen name="car_prof_price_height">80dp</dimen>
+    <dimen name="car_prof_city_height">80dp</dimen>
+
+    <dimen name="buybtn_layout">60dp</dimen>
+    <dimen name="car_name_layout">60dp</dimen>
+</resources>
